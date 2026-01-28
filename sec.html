@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mediclab.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Smile</title>
+</head>
+<body>
+    <header>
+        <div class="overlay" >
+            <div id="logoNav">
+                <div id="logo"><img src="logo.png" width="100px"/></div>
+                <div id="hamburger-menu">
+                    <!-- <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div> -->
+                </div>
+                <nav id="navbar">
+                    <ul>
+                        <li><a class="nav-text" href="#intro">Dr. Smile</a></li>
+                        <li><a class="nav-text" href="#section-4">Services</a></li>
+                        <li><a class="nav-text" href="#section-6">Specialists</a></li>
+                        <li><a class="nav-text" href="#section-5">FAQ</a></li>
+                        <li><a class="nav-text" href="#section-8">Ask an Expert</a></li>
+                        <li><a class="nav-text" href="#video-section">Help Videos</a></li>
+                        <li><a class="nav-text" href="#blog-section">Blogs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav id="mobile-menu"> 
+                <ul>
+                        <li><a class="mobile-menu-list" href="#intro">Dr. Smile</a></li>
+                        <li><a class="mobile-menu-list" href="#section-4">Services</a></li>
+                        <li><a class="mobile-menu-list" href="#section-6">Specialists</a></li>
+                        <li><a class="mobile-menu-list" href="#section-5">FAQ</a></li>
+                        <li><a class="mobile-menu-list" href="#section-8">Ask an Expert</a></li>
+                        <li><a class="mobile-menu-list" href="#video-section">Help Videos</a></li>
+                        <li><a class="mobile-menu-list" href="#blog-section">Blogs</a></li>
+                </ul>
+            </nav>
+            <main>
+                <p class="text1">Meet<p>
+                <h1>Dr. Smile</h1>
+                <p class="text2">Fighting halitosis and promoting fresh breath.</p>
+                <a href="#intro"><button id="headerbutton">Know More</button></a>
+            </main>
+        </div>
+
+    </header>
+    <section id="intro">
+        <h2>Who is Dr. Smile?</h2>
+        <div>
+            <div id="intro-img">
+                <img src="dr.smile2.jpg" width="100%" />
+            </div>
+            <div id="intro-text">
+                <p>Meet Dr. Smile, your go-to resource for combating halitosis and achieving fresh breath.</p> <p>Halitosis, or bad breath, is a common condition that affects many individuals and can be caused by a variety of factors, including poor dental hygiene, certain foods, and underlying health conditions. Dr. Smile understands the impact that bad breath can have on your confidence and social interactions, which is why it is dedicated to providing you with the information and solutions you need to effectively combat halitosis.</p>
+                <p>Dr. Smile offers a range of services and resources, including consultations with dental professionals who can help diagnose and treat the underlying causes of your bad breath. Additionally, it provides recommendations for effective products and techniques to maintain fresh breath and promote good dental hygiene. Dr. Smile believes that everyone deserves to feel confident and comfortable in their own skin, and it is committed to helping you achieve that goal. Trust Dr. Smile to be your partner in the journey towards fresher breath and a healthier mouth.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-4">
+        <h2>What does Dr. Smile have for you?</h2>
+        <div id="section-4-grid">
+            <div class="section-4-box">
+                <img class="section-4-icon" src="chatbot.png" alt="" />
+                <p class="section-4-text-1">BreathBot</p>
+                <p class="section-4-text-2">Introducing BreathBot - your personal guide to fresh breath! Chat with our AI-powered bot about dental health and halitosis, and get real-time advice and support.</p>
+                <ul>
+                    <li>Personalized advice</li>
+                    <li>Real-time support</li>
+                    <li>Language support</li>
+                    <li>Self help resources</li>
+                    <li>Data privacy</li>
+                </ul>
+                <button id="chat-toggle-btn">💬 Chat with BreathBot</button>
+
+            <div id="chat-window">
+                <div class="chat-header">
+                    <span>BreathBot AI</span>
+                    <button id="close-chat">✖</button>
+                </div>
+    
+                <div id="chat-messages">
+                                <div class="message bot-message">Hello! I'm BreathBot. Ask me about hours, location, or appointments.</div>
+                </div>
+    
+                <div class="chat-input-area">
+                    <input type="text" id="user-input" placeholder="Type a message..." />
+                    <button id="send-btn">Send</button>
+                </div>
+              </div>
+            </div>
+            <div class="section-4-box">
+                <img class="section-4-icon" src="dentist (1).png" alt="" />
+                <p class="section-4-text-1">Ask a Dentist</p>
+                <p class="section-4-text-2">Whether you have a specific question about a dental issue or just need general advice on how to maintain good dental hygiene, you can chat with a dental expert and receive quick, reliable answers from the comfort of your home.</p>
+                <ul>
+                    <li>Personalized recommendations</li>
+                    <li>Cost-effective</li>
+                    <li>Confidentiality</li>
+                    <li>User-friendly interface</li>
+                    <li>Anonimity</li>
+                </ul>
+            </div>
+            <div class="section-4-box" >
+                <img class="section-4-icon" src="location.png" alt="Map location icon" />
+                <p class="section-4-text-1">Dental Locator</p>
+                <p class="section-4-text-2">Simply input your location and our platform will provide you with a list of nearby dental clinics. This makes it easier than ever to find a dentist when you need one.</p>
+                <ul>
+                    <li>Location-based search</li>
+                    <li>Clinic details</li>
+                    <li>Reviews and ratings</li>
+                    <li>Cost estimates</li>
+                    <li>Appointment booking</li>
+                </ul>
+            
+                <button id="find-nearby-btn" class="btn-primary-locator">
+                    Find Dentists Nearby
+                </button>
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+    <section id="section-6">
+        <h2>Our Smile Specialists</h2>
+        <div id="section-6-grid">
+            <div class="section-6-box">
+                <div class="doc-img">
+                <img src="Rectangle 23.jpg" class="section-6-box-image" alt=""/>
+                </div>
+                <p class="dr-name" >Dr. Emeka Okafor</p>
+                <p class="dr-title" >Oral Surgeon</p>
+                <div class="section-6-schedule">
+                    <div>
+                        <p>Mon-Thur</p>
+                        <p>Friday</p>
+                        <p>Saturday</p>
+                    </div>
+                    <div>
+                        <p>08:00-20:00</p>
+                        <p>08:00-20:00</p>
+                        <p>08:00-20:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-6-box">
+                <div>
+                <img src="Rectangle 20.png" class="section-6-box-image" alt=""/>
+                </div>
+                <p class="dr-name" >Dr. William Geralg</p>
+                <p class="dr-title" >Oral and Maxillofacial Surgeon</p>
+                <div class="section-6-schedule">
+                    <div>
+                        <p>Mon-Thur</p>
+                        <p>Friday</p>
+                        <p>Saturday</p>
+                    </div>
+                    <div>
+                        <p>08:00-20:00</p>
+                        <p>08:00-20:00</p>
+                        <p>08:00-20:00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="section-6-box" >
+                <img src="images/Rectangle 21.png" class="section-6-box-image" alt=""/>
+                <p class="dr-name" >Dr Mike Ebube</p>
+                <p class="dr-title" >Dentist</p>
+                <div class="section-6-schedule">
+                    <div>
+                        <p>Mon-Thur</p>
+                        <p>Friday</p>
+                        <p>Saturday</p>
+                    </div>
+                    <div>
+                        <p>08:00-20:00</p>
+                        <p>08:00-20:00</p>
+                        <p>08:00-20:00</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="section-6-box">
+                <img src="Rectangle 22.png"  class="section-6-box-image" alt=""/>
+                <p class="dr-name" >Dr. Egbon Cedric</p>
+                <p class="dr-title" >Orthodontist</p>
+                <div class="section-6-schedule">
+                    <div>
+                        <p>Mon-Thur</p>
+                        <p>Friday</p>
+                        <p>Saturday</p>
+                    </div>
+                    <div>
+                        <p>08:00-20:00</p>
+                        <p>08:00-20:00</p>
+                        <p>08:00-20:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section  id="section-5">
+        <h2>Frequently Asked Questions</h2>
+        <div id="section-5-grid">
+            <div id="accordion-container">
+                <div class="accordion-box">
+                    <button class="accordion">What is halitosis?</button>
+                    <div class="panel">
+                        <p class="panel-text">Halitosis, more commonly known as bad breath, is an unpleasant odor coming from the mouth that can be caused by various factors.</p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <button class="accordion" >What are the common causes of halitosis?</button>
+                    <div class="panel">
+                        <p class="panel-text">Halitosis can be caused by poor dental hygiene, gum disease, dry mouth, smoking, certain foods and drinks, medical conditions, and medication use.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <button class="accordion" >Can poor dental hygiene cause halitosis?</button>
+                    <div class="panel">
+                        <p class="panel-text">Yes, poor dental hygiene is a common cause of halitosis. Not brushing and flossing regularly can cause plaque buildup on teeth, leading to bacteria growth and bad breath.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <button class="accordion" >Can gum disease cause halitosis?</button>
+                    <div class="panel">
+                        <p class="panel-text">Yes, gum disease can cause halitosis. Gum disease is caused by bacterial infection in the gums, which can produce a foul odor in the mouth.</p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <button class="accordion" >Can mouthwash help with halitosis?</button>
+                    <div class="panel">
+                        <p class="panel-text">Mouthwash can help temporarily mask bad breath, but it does not address the underlying cause. It is important to practice good dental hygiene and address any underlying medical conditions to prevent halitosis.</p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <button class="accordion" >What medical conditions can cause halitosis?</button>
+                    <div class="panel">
+                        <p class="panel-text">Medical conditions that can cause halitosis include respiratory infections, diabetes, liver disease, and kidney disease, among others.</p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <button class="accordion" >Can medication use cause halitosis?</button>
+                    <div class="panel">
+                        <p class="panel-text">Yes, some medications can cause dry mouth, which can lead to halitosis. Other medications can cause chemical changes in the body that produce a foul odor in the breath.</p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <button class="accordion" >How can I prevent halitosis?</button>
+                    <div class="panel">
+                        <p class="panel-text">Practicing good dental hygiene, quitting smoking, drinking plenty of water, and avoiding foods and drinks that cause bad breath can help prevent halitosis. Regular dental checkups and cleaning can also help.</p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <button class="accordion" >What are some treatments for halitosis?</button>
+                    <div class="panel">
+                        <p class="panel-text">Treatments for halitosis depend on the underlying cause. If caused by poor dental hygiene or gum disease, regular brushing and flossing and a visit to the dentist for cleaning can help. For other causes, treatment may involve addressing the underlying medical condition or changing medication.</p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <button class="accordion" >When should I see a doctor or dentist about halitosis?</button>
+                    <div class="panel">
+                        <p class="panel-text">If halitosis persists despite practicing good dental hygiene and avoiding foods and drinks that cause bad breath, or if it is accompanied by other symptoms such as bleeding gums, it is important to see a dentist or doctor to identify and treat the underlying cause.</p>
+                    </div>
+                </div>
+                <a href="#section-8"><button id="accordion-button">Ask Other Questions</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-8" >
+        <div id="section-8-grid">
+            <h2>Ask A Dentist</h2>
+            <div>
+                <form method="post">
+                    <div>
+                    <label for="fullname">Fullname</label><br>
+                    <input placeholder="Enter your name here" type="text" name="full name" id="fullname" />
+                    </div>
+                    <div>
+                    <label for="email">Email</label><br>
+                    <input placeholder="Enter your email here" type="email" name="email" id="email" />
+                    </div>
+                    <div>
+                    <label for="message">Message</label><br>
+                    <textarea placeholder="What's your question?"></textarea>
+                    </div>
+                    <div id="submitmobile">
+                    <input id="submit" type="submit" value="Ask Your Question" />
+                    </div> 
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="video-section">
+        <h2>Curated Videos from Dr. Smile</h2>
+        <div id="vid-container">
+            <div class="vid-frame">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/L1-K-bwZaGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>HOW TO GET RID OF BAD BREATH IN 5 MINUTES</p>
+            </div>
+            <div class="vid-frame">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KoOMRLOzWZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>TOP 5 CAUSES OF BAD BREATH</p>
+            </div>
+            <div class="vid-frame">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Emh7KZebDuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>THE DENTAL FIVE RULES</p>
+            </div>
+            <div class="vid-frame">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/m3pBA4cgdxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>HOW TO FLOSS YOUR TEETH</p>
+            </div>
+            <div class="vid-frame">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BapR9J86ZZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>HOW TO BRUSH YOUR TEETH</p>
+            </div>
+             <div class="vid-frame">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/svZKAhEtdQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>HOW TO FIX BAD BREATH PERMANENTLY</p>
+            </div>
+        </div>
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <section id="blog-section">
+        <h2>CURATED Blogs from Dr. Smile</h2>
+        <div id="blog-container">
+            <section class="article-piece">
+                <img src="clean-tongue.jpeg" />
+                <div>
+                    <p class='article-piece-title'>ORAL HYGIENE</p>
+                    <p class='article-piece-date'>MAY 05, 2023</p>
+                    <p class='article-piece-text'>From a very young age, we are taught about the importance of brushing our teeth and how keeping our mouths clean promotes good oral health and keeps our smiles looking great. These teachings...</p>
+                    <a href="https://barriedentist.ca/big-mouth-blog/general-dental-articles/tongue-brushing"><button class="article-btn">Read Here</button></a>
+                </div>
+            </section>
+            <section class="article-piece">
+                <img src="bad-breath-and-halitosis.jpg" />
+                <div>
+                    <p class='article-piece-title'>DEALING WITH BAD BREATH AND HALITOSIS?</p>
+                    <p class='article-piece-date'>APRIL 23, 2023</p>
+                    <p class='article-piece-text'>We all have bad breath from time to time. Whether it’s the dreaded morning breath or simply the result of a garlic-infused meal, or too much coffee – none of us are immune to it. However, when it becomes...</p>
+                    <a href="https://barriedentist.ca/big-mouth-blog/general-dental-articles/treating-nasty-bad-breath-and-halitosis"><button class="article-btn">Read Here</button></a>
+                </div>
+            </section>
+            <section class="article-piece">
+                <img src="velscope-cancer-screening.jpg" />
+                <div>
+                    <p class='article-piece-title'>ORAL CANCER DETECTION</p>
+                    <p class='article-piece-date'>MARCH 03, 2023</p>
+                    <p class='article-piece-text'>The possibility of developing oral cancer at some point is an understandably scary concept for most people, but probably not one that you generally think too much about during...</p>
+                    <a href="https://barriedentist.ca/big-mouth-blog/general-dental-articles/oral-cancer-treatment-and-detection"><button class="article-btn">Read Here</button></a>
+                </div>
+            </section>
+        </div>
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <footer>
+        <div><p id="footerlogo">Dr. Smile</p></div>
+        <div id="spacer"><p>FOT SEC PROJECT 2025</p></div>
+        <div id="socials">
+            <div><img class="social-icons" src="images/Vector-1.svg" alt=""  /></div>
+            <div><img class="social-icons" src="images/Vector-2.svg" alt=""  /></div>
+            <div><img class="social-icons" src="images/Vector-3.svg" alt=""  /></div>
+            <div><img class="social-icons" src="images/bx_bxl-instagram.svg" alt="" /></div>
+        </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="mediclab.js"></script>
+</body>
+</html>
